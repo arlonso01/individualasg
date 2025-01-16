@@ -1,0 +1,107 @@
+/* Body Styling */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #2b3a2a, #1a1f1b); /* Dark earthy gradient */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Subtle wood texture */
+    background-size: cover;
+}
+
+/* Container Styling */
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 25px;
+    max-width: 600px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(20, 20, 20, 0.8); /* Semi-transparent dark background */
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.8); /* Soft pinkish glow */
+    text-align: center;
+    backdrop-filter: blur(5px); /* Soft blur effect */
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 15px #f0f8ff, 0 0 30px #8a2be2, 0 0 60px #00ff7f; /* Glowing magical effect */
+    color: #e0ffff;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2rem;
+    color: #dcdcdc;
+    text-shadow: 0 0 10px #ff1493, 0 0 20px #ff6347; /* Soft glowing text */
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(90deg, #32cd32, #adff2f);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 15px #32cd32, 0 0 25px #adff2f; /* Glowing effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #32cd32, 0 0 35px #adff2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        margin: 5px;
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+}
